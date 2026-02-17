@@ -27,7 +27,7 @@ public class AuthenticatorController {
         return service.signUp(user);
     }
     
-    @GetMapping("/sign-in")
+    @PostMapping("/sign-in")
     public ResponseEntity<String> signIn(@RequestBody Authenticator user) {
         return service.signIn(user);
     }
