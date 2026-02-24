@@ -28,6 +28,12 @@ public class Api {
         return post("auth_post", "8081", "authentication/**")
             .and(
                 delete("auth_delete", "8081", "authentication/**")
+            ).and(
+                post("customer_post", "8082", "customer/**")
+            ).and(
+                get("customer_get", "8082", "customer/**")
+            ).and(
+                delete("customer_delete", "8082", "customer/**")
             );
     }
 }
