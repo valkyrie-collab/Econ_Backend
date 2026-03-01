@@ -19,6 +19,7 @@ public class Order {
     private String customerId;
     private String sellerId;
     private String address;
+    private int quantity;
     private boolean cancel;
 
     public String getOrderId() {
@@ -39,6 +40,10 @@ public class Order {
 
     public String getAddress() {
         return address;
+    }
+
+    public int getQuantity() {
+        return quantity;
     }
 
     public boolean getCancel() {
@@ -67,6 +72,11 @@ public class Order {
 
     public Order setAddress(String address) {
         this.address = address;
+        return this;
+    }
+
+    public Order setQuantity(int quantity) {
+        this.quantity = quantity;
         return this;
     }
 

@@ -6,6 +6,7 @@ public class OrderDTO {
     private String customerId;
     private String sellerId;
     private String address;
+    private int quantity;
     private boolean cancel;
 
     public String getOrderId() {
@@ -26,6 +27,10 @@ public class OrderDTO {
 
     public String getAddress() {
         return address;
+    }
+
+    public int getQuantity() {
+        return quantity;
     }
 
     public boolean getCancel() {
@@ -54,6 +59,11 @@ public class OrderDTO {
 
     public OrderDTO setAddress(String address) {
         this.address = address;
+        return this;
+    }
+
+    public OrderDTO setQuantity(int quantity) {
+        this.quantity = quantity;
         return this;
     }
 

@@ -54,7 +54,7 @@ public class OrderService {
         for (Order o : orders) {
             orderDTOs.add(
                 new OrderDTO().setAddress(o.getAddress()).setCustomerId(o.getCustomerId()).setCancel(o.getCancel())
-                    .setOrderId(o.getOrderId()).setProductId(o.getProductId()).setSellerId(o.getSellerId())
+                    .setOrderId(o.getOrderId()).setProductId(o.getProductId()).setSellerId(o.getSellerId()).setQuantity(o.getQuantity())
             );
         }
 
