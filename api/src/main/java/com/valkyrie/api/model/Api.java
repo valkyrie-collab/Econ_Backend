@@ -40,6 +40,12 @@ public class Api {
                 get("order_get", "8083", "order/**")
             ).and(
                 delete("order_delete", "8083", "order/**")
+            ).and(
+                post("seller_post", "8084", "seller/**")
+            ).and(
+                get("seller_get", "8084", "seller/**")
+            ).and(
+                delete("seller_delete", "8084", "seller/**")
             );
     }
 }
